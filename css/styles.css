@@ -9,7 +9,6 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: sticky;
 }
 .menu {
     list-style: none;
@@ -143,7 +142,7 @@ footer {
     justify-content: space-evenly;
     height: 300px;
 }
-.equipo-lista {
+.equipo-item {
     font-size: 35px;
 }
 .titulo-lista {
