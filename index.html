@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="grid">
         <header>
             <a href="#"><img class="logo" src="./img/juavic-logo.png" alt="Juavic Logo"></a> 
             <nav>
@@ -23,21 +23,25 @@
                 </ul>
             </nav>
         </header>
-        <main class="grid">
-            <div data-aos="fade-up">
+        <section class="bienvenida">
+            <div id="row-2" data-aos="fade-up">
                 <div class="contenido">
                     <h1 class="titulo-bienvenida">Bienvenidos a Juavic Refrigeración</h1>
                     <h2 class="subtitulo-bienvenida">Te instalamos o reparamos el aire en CABA</h2>
                 </div>
             </div>
+        </section>
+        <section class="seccion_imagenes">
             <div data-aos="zoom-in">
-                <section class="seccion_imagenes">
-                    <img class="imagenes" src="./img/imagen1.jpeg" alt="foto">
-                    <img class="imagenes" src="./img/imagen2.jpeg" alt="foto">
-                </section>
+                <img class="imagenes" src="./img/imagen1.jpeg" alt="foto">
             </div>
-            <div data-aos="fade-right">
-                <section class="equipos">
+            <div data-aos="zoom-in">
+                <img class="imagenes" src="./img/imagen2.jpeg" alt="foto">
+            </div>
+        </section>
+        <section class="lista">
+            <div id="row-4" data-aos="fade-right">
+                <div class="equipos">
                     <h1 class="titulo-lista">Equipos que instalamos:</h1>
                     <ul class="lista_equipos">
                         <li class="equipo-item">Sistemas On/Off</li>
@@ -46,15 +50,15 @@
                         <li class="equipo-item">Baja Silueta</li>
                         <li class="equipo-item">Tipo Casette</li>
                     </ul>
-                </section>
+                </div>
             </div>
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script>
-                AOS.init();
-              </script>
-        </main>
+        </section>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <footer>
             <p class="footer-text">Sitio web creado por Lucas Martín Céspedes | Contactanos por Whatsapp | Buenos Aires, Argentina | 2022</p>
         </footer>
     </body>
-    </html>
+</html>

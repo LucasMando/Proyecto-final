@@ -1,304 +1,183 @@
 * {
-  font-family: 'Fredoka', sans-serif;
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-
 header {
-  background-color: #3beaf0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    background-color: rgb(59, 234, 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    grid-area: header;
 }
-
+.bienvenida {
+    grid-area: titulo;
+}
+.lista {
+    grid-area: lista;
+}
 .menu {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
 }
-
 a {
-  text-decoration: none;
-  color: black;
-  -webkit-transition: color .3s;
-  transition: color .3s;
-  font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: color .3s;
+    font-size: 1.5rem;
 }
-
 a:hover {
-  color: white;
+    color: rgb(255, 255, 255);
 }
-
 .logo {
-  width: 150px;
-  height: 150px;
+    width: 150px;
+    height: 150px;
 }
-
 footer {
-  background-color: #3beaf0;
-  padding: 50px 25px;
+    background-color: rgb(59, 234, 240);
+    padding: 25px;
+    grid-area: footer;
 }
-
 nav {
-  width: 50%;
+    width: 50%;
 }
-
 .contenido {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
 }
-
 .imagenes {
-  width: 100%;
-  height: 675px;
+    width: 100%;
+    height: 100%;
 }
-
 .seccion_imagenes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    grid-area: imagenes;
 }
-
 .footer-text {
-  font-size: 20px;
+    font-size: 1.5rem;
 }
-
 .titulo-bienvenida {
-  padding: 40px 30px;
-  font-size: 80px;
+    padding: 40px 30px;
+    font-size: 5rem;
 }
-
 .subtitulo-bienvenida {
-  padding: 40px 30px;
-  font-size: 40px;
+    padding: 40px 30px;
+    font-size: 3rem;
 }
-
 .contenido_nosotros {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
-
 #info_nosotros {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: 700px;
-  margin-right: 500px;
-  margin-left: 30px;
-  margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 700px;
+    margin-right: 500px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
-
 #titulo_nosotros {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
 }
-
 .titulo {
-  margin: 50px;
-  font-size: 80px;
+    margin: 50px;
+    font-size: 6rem;
 }
-
 .subtitulo-nosotros {
-  font-size: 50px;
+    font-size: 50px;
 }
-
 .preguntas {
-  margin: 50px;
+    margin: 50px;
 }
-
 .titulo_contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 50px;
-  font-size: 80px;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    font-size: 80px;
 }
-
 .info_contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
 }
-
 .redes {
-  font-size: 30px;
-  margin-left: 50px;
+    font-size: 30px;
+    margin-left: 50px;
 }
-
 .fieldset {
-  height: 85px;
-  width: 550px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+    height: 85px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
-
 .form_section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 175px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 175px;
+    align-items: center;
 }
-
 #input_mail {
-  margin: 10px;
-  width: 275px;
-  height: 25px;
+    margin: 10px;
+    width: 275px;
+    height: 25px;
 }
-
-#input_submit {
-  height: 29px;
+#input_submit{
+    height: 29px;
 }
-
 .legend {
-  font-size: 23px;
+    font-size: 23px;
 }
-
 .equipos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 50px;
+    height: 100%;
+    align-items: center;
 }
-
 .lista_equipos {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
 }
-
 .equipo-item {
-  font-size: 35px;
+    font-size: 2rem;
 }
-
 .titulo-lista {
-  font-size: 50px;
+    font-size: 3rem;
 }
-
 .grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "imagenes imagenes"
+    "lista lista"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8% 45% 40% 35% 5%;
 }
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .imagenes {
-    height: 380px;
-    width: 434px;
-  }
-  .titulo-bienvenida {
-    font-size: 55px;
-  }
-  .subtitulo-bienvenida {
-    font-size: 30px;
-  }
-  .titulo-lista {
-    font-size: 45px;
-  }
-  .equipo-lista {
-    font-size: 30px;
-  }
+#row-2 {
+    height: 100%;
 }
-
-@media screen and (max-width: 425px) {
-  .imagenes {
-    height: 250px;
-    width: 212px;
-  }
-  .titulo-bienvenida {
-    font-size: 40px;
-    text-align: center;
-  }
-  .subtitulo-bienvenida {
-    font-size: 20px;
-  }
-  .titulo-lista {
-    font-size: 35px;
-  }
-  .equipo-lista {
-    font-size: 25px;
-  }
+#row-4 {
+    height: 100%;
 }
-/*# sourceMappingURL=styles.css.map */

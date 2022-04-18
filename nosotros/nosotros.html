@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/juavic-logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Nosotros</title>
 </head>
 <body>
@@ -26,23 +27,33 @@
         <div id="titulo_nosotros">
             <h1 class="titulo">Nosostros</h1>
         </div>
-        <div id="info_nosotros">
-            <div class="preguntas">
-                <h2 class="subtitulo-nosotros">Quienes somos</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate animi nam recusandae blanditiis. Unde cupiditate accusantium deleniti reprehenderit molestiae dolores, doloribus illum tempore eligendi, qui vero delectus eum consequatur impedit.</p>
+        <article id="info_nosotros">
+            <div data-aos="fade-right">
+                <div class="preguntas">
+                    <h2 class="subtitulo-nosotros">Quienes somos</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate animi nam recusandae blanditiis. Unde cupiditate accusantium deleniti reprehenderit molestiae dolores, doloribus illum tempore eligendi, qui vero delectus eum consequatur impedit.</p>
+                </div>
             </div>
-            <div class="preguntas">
-                <h2 class="subtitulo-nosotros">A que nos dedicamos</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus officiis incidunt aperiam eaque praesentium a. Incidunt adipisci, earum quas suscipit officia porro aliquam rerum quia quos totam et corrupti! Rerum!</p>
+            <div data-aos="fade-left">
+                <div class="preguntas">
+                    <h2 class="subtitulo-nosotros">A que nos dedicamos</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus officiis incidunt aperiam eaque praesentium a. Incidunt adipisci, earum quas suscipit officia porro aliquam rerum quia quos totam et corrupti! Rerum!</p>
+                </div>
             </div>
-            <div class="preguntas">
-                <h2 class="subtitulo-nosotros">A que queremos llegar</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, accusantium inventore! Quo qui cumque ab sed asperiores earum repudiandae aut fuga ipsum facilis. Rem molestias inventore vel cupiditate accusamus culpa!</p>
+            <div data-aos="fade-right">
+                <div class="preguntas">
+                    <h2 class="subtitulo-nosotros">A que queremos llegar</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, accusantium inventore! Quo qui cumque ab sed asperiores earum repudiandae aut fuga ipsum facilis. Rem molestias inventore vel cupiditate accusamus culpa!</p>
+                </div>
             </div>
-        </div>
+        </article>
     </section>
     <footer>
         <p class="footer-text">Sitio web creado por Lucas Martín Céspedes | Contactanos por Whatsapp | Buenos Aires, Argentina | 2022</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
