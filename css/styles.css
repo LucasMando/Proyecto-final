@@ -23,22 +23,28 @@ header {
   grid-area: header;
 }
 
-.bienvenida {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: titulo;
+header a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  font-size: 1.5em;
 }
 
-.lista {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: lista;
-  height: 80%;
+header a .logo {
+  width: 150px;
+  height: 150px;
 }
 
-.menu {
+header a:hover {
+  color: white;
+}
+
+header nav {
+  width: 50%;
+}
+
+header nav .menu {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,47 +54,14 @@ header {
           justify-content: space-evenly;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  -webkit-transition: color .3s;
-  transition: color .3s;
-  font-size: 1.5em;
-}
-
-a:hover {
-  color: white;
-}
-
-.logo {
-  width: 150px;
-  height: 150px;
-}
-
-footer {
-  background-color: #3beaf0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 15vh;
-}
-
-.pie-de-pagina {
-  -ms-grid-row: 5;
+.bienvenida {
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: footer;
-  width: 100%;
+  grid-area: titulo;
 }
 
-nav {
-  width: 50%;
-}
-
-.contenido {
+.bienvenida .contenido {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +76,87 @@ nav {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 100%;
+}
+
+.bienvenida .contenido .titulo-bienvenida {
+  padding: 40px 30px;
+  font-size: 5em;
+}
+
+@media screen and (max-width: 425px) {
+  .bienvenida .contenido .titulo-bienvenida {
+    text-align: center;
+  }
+}
+
+.lista {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: lista;
+  height: 80%;
+}
+
+.lista .equipos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 50px;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lista .equipos .titulo-lista {
+  font-size: 3rem;
+}
+
+.lista .equipos .lista_equipos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 300px;
+}
+
+.lista .equipos .lista_equipos .equipo-item {
+  font-size: 2rem;
+}
+
+footer {
+  background-color: #3beaf0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  width: 100%;
+  padding-left: 2%;
 }
 
 .imagenes {
@@ -126,15 +180,13 @@ nav {
           align-items: center;
 }
 
-.footer-text {
-  font-size: 1.5rem;
-  width: 100%;
-  padding-left: 2%;
-}
-
-.titulo-bienvenida {
-  padding: 40px 30px;
-  font-size: 5em;
+@media screen and (max-width: 425px) {
+  .seccion_imagenes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .subtitulo-bienvenida {
@@ -259,46 +311,6 @@ nav {
   font-size: 23px;
 }
 
-.equipos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 50px;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.lista_equipos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: 300px;
-}
-
-.equipo-item {
-  font-size: 2rem;
-}
-
-.titulo-lista {
-  font-size: 3rem;
-}
-
 .grid {
   display: -ms-grid;
   display: grid;
@@ -307,17 +319,5 @@ nav {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 0fr 1fr 1fr 1fr 0fr;
       grid-template-rows: 0fr 1fr 1fr 1fr 0fr;
-}
-
-@media screen and (min-width: 720px) and (max-width: 767) {
-  .titulo-bienvenida {
-    text-align: center;
-  }
-  .seccion_imagenes {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 /*# sourceMappingURL=styles.css.map */
