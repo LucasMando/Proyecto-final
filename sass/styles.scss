@@ -1,10 +1,18 @@
 $bgColor: rgb(59, 234, 240);
+$menu-styles: (
+	estilo-lista: none,
+	espacio: space-evenly,
+);
 
 * {
 	font-family: 'Fredoka', sans-serif;
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+}
+@mixin link {
+	color: black;
+	font-size: 1.5em;
 }
 header {
 	background-color: $bgColor;
@@ -13,10 +21,9 @@ header {
 	align-items: center;
 	grid-area: header;
 	a {
+		@include link;
 		text-decoration: none;
-		color: black;
 		transition: color .3s;
-		font-size: 1.5em;
 		.logo {
 			width: 150px;
 			height: 150px;
@@ -26,11 +33,11 @@ header {
 		}
 	}
 	nav {
-		width: 50%;
+		width: 100%;
 		.menu {
-			list-style: none;
+			list-style: map-get($map: $menu-styles, $key: estilo-lista );
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: map-get($map: $menu-styles, $key: espacio);
 		}
 	}
 }
@@ -48,9 +55,13 @@ header {
 			@media screen and (max-width: 425px) {
 					text-align: center;
 			}
-		}
+		}	
 	}
-}	
+}
+.titulo-bienvenida--decoration {
+	@extend .titulo-bienvenida;
+	text-decoration: underline;
+}
 .lista {
 	grid-area: lista;
 	height: 80%;

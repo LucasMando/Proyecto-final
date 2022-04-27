@@ -24,11 +24,11 @@ header {
 }
 
 header a {
-  text-decoration: none;
   color: black;
+  font-size: 1.5em;
+  text-decoration: none;
   -webkit-transition: color .3s;
   transition: color .3s;
-  font-size: 1.5em;
 }
 
 header a .logo {
@@ -41,7 +41,7 @@ header a:hover {
 }
 
 header nav {
-  width: 50%;
+  width: 100%;
 }
 
 header nav .menu {
@@ -78,15 +78,19 @@ header nav .menu {
   height: 100%;
 }
 
-.bienvenida .contenido .titulo-bienvenida {
+.bienvenida .contenido .titulo-bienvenida, .bienvenida .contenido .titulo-bienvenida--decoration {
   padding: 40px 30px;
   font-size: 5em;
 }
 
 @media screen and (max-width: 425px) {
-  .bienvenida .contenido .titulo-bienvenida {
+  .bienvenida .contenido .titulo-bienvenida, .bienvenida .contenido .titulo-bienvenida--decoration {
     text-align: center;
   }
+}
+
+.titulo-bienvenida--decoration {
+  text-decoration: underline;
 }
 
 .lista {
