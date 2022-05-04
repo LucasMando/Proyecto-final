@@ -221,7 +221,30 @@ footer {
 		}
 	}
 }
-
+.gallery-section {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 31% 1fr;
+		width: 70%;
+		.aire {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+.gallery-title {
+	text-align: center;
+	font-size: 4em;
+	margin-top: 5%;
+    margin-bottom: 5%;
+	@media screen and (max-width: 425px) {
+		font-size: 3em;
+	}
+}
 .grid {
 	display: grid;
 	grid-template-areas: "header header" "titulo titulo" "imagenes imagenes" "lista lista" "footer footer";
