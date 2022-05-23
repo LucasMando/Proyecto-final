@@ -214,6 +214,7 @@ footer .footer-text {
 
 .marca-descripción {
   width: 70%;
+  font-size: 1.5em;
 }
 
 .marca-img {
@@ -289,5 +290,8 @@ footer .footer-text {
   }
   .title-marcas {
     font-size: 3em;
+  }
+  .marca-descripción {
+    font-size: 1.1em;
   }
 }
