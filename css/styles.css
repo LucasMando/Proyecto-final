@@ -165,63 +165,6 @@ footer .footer-text {
   justify-content: center;
 }
 
-.gallery-section {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-}
-
-.gallery-section .gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 31% 1fr;
-  width: 90%;
-}
-
-.gallery-section .gallery .aire {
-  width: 100%;
-  height: auto;
-}
-
-.gallery-title {
-  text-align: center;
-  font-size: 4em;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-.title-marcas {
-  text-align: center;
-  font-size: 5em;
-  margin: 60px;
-  text-decoration: underline;
-}
-
-.marca1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #5cc8fb;
-  height: 50vh;
-}
-
-.marca2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 50vh;
-}
-
-.marca-descripción {
-  width: 70%;
-  font-size: 1.5em;
-}
-
-.marca-img {
-  width: 200px;
-  height: auto;
-}
-
 /*media queries*/
 
 @media screen and (max-width: 425px) {
